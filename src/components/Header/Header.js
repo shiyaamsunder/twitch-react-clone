@@ -2,6 +2,8 @@ import React from "react";
 import "./Header.css";
 import Input from "../Input/Input";
 import NavLink from "./NavLink/NavLink";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css";
 
 const Header = (props) => {
   return (
@@ -21,9 +23,11 @@ const Header = (props) => {
           <div className="links links-right">
             <NavLink type="header" name="Esports" />
             <NavLink type="header" name="Music" />
-            <div className="icon">
-              <i className="fas fa-ellipsis-h"></i>
-            </div>
+            <Tippy content={<span style={{ fontFamily: "Inter" }}>More</span>}>
+              <div className="icon">
+                <i className="fas fa-ellipsis-h"></i>
+              </div>
+            </Tippy>
           </div>
         </div>
       </div>
@@ -32,12 +36,21 @@ const Header = (props) => {
       </div>
       <div className="header__right">
         <div className="right-links">
-          <div className="icon">
-            <i className="fas fa-inbox"></i>
-          </div>
-          <div className="icon">
-            <i className="far fa-comment-alt"></i>
-          </div>
+          <Tippy
+            content={<span style={{ fontFamily: "Inter" }}>Notifications</span>}
+          >
+            <div className="icon">
+              <i className="fas fa-inbox"></i>
+            </div>
+          </Tippy>
+
+          <Tippy
+            content={<span style={{ fontFamily: "Inter" }}>Whispers</span>}
+          >
+            <div className="icon">
+              <i className="far fa-comment-alt"></i>
+            </div>
+          </Tippy>
           <div className="icon getbits">
             <i className="fas fa-gem"></i>
             Get Bits
