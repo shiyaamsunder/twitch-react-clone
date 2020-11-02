@@ -1,6 +1,11 @@
 header {
   height: 50px;
   width: 100%;
+}
+
+.header__container {
+  height: 50px;
+  width: 100%;
   background-color: var(--headerColor);
   box-shadow: var(--shadow-elevation);
   display: flex;
