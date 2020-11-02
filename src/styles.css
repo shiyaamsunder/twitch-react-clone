@@ -1,0 +1,53 @@
+:root {
+  --bgcolor: #0e0e10;
+  --headerColor: #18181b;
+  --sidebarColor: #1f1f23;
+  --sidebarHover: #353536;
+  --primaryColor: #9147ff;
+  --textColor: #ffffff;
+  --shadow-elevation: 0px 1px 2px rgba(0, 0, 0, 0.9),
+    0 0px 2px rgba(0, 0, 0, 0.9);
+  --inputColor: #464648;
+  --border-radius: 3px;
+}
+
+/* *{
+  margin: 0;
+  padding: 0;
+} */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0e0e10;
+  color: var(--textColor);
+  overflow: overlay;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 4px;
+}
+
+.App {
+  font-family: "Inter", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--textColor);
+}
+
+a:hover {
+  color: var(--primaryColor);
+}

@@ -1,0 +1,42 @@
+.Input {
+  background-color: var(--inputColor);
+  font-family: "Inter", sans-serif;
+  outline: none;
+  border: 2px solid var(--inputColor);
+  border-radius: var(--border-radius);
+  transition: all 0.4s ease;
+  color: var(--textColor);
+  padding: 0 0.4rem;
+}
+
+.Input:focus {
+  background-color: black;
+
+  border: 2px solid var(--primaryColor);
+}
+
+.medium {
+  height: 20px;
+  width: 180px;
+}
+
+.small {
+  height: 20px;
+  width: 80px;
+}
+
+.large {
+  height: 30px;
+  width: 240px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.search__icon {
+  cursor: pointer;
+  background-color: rgb(37, 37, 37);
+  height: 34px;
+  width: 34px;
+  display: grid;
+  place-content: center;
+  border-radius: 0px 4px 4px 0px;
+}
