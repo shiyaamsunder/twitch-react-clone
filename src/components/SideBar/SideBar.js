@@ -3,7 +3,7 @@ import "./SideBar.css";
 import Channels from "./Channels/Channels";
 import Input from "../Input/Input";
 
-const SideBar = (props) => {
+const SideBar = () => {
   return (
     <div className="Sidebar">
       <div className="Sidebar__container">
@@ -23,7 +23,6 @@ const SideBar = (props) => {
         <Channels type="online" />
       </div>
       <div className="Sidebar__search">
-        {/* <input placeholder="Search to add friends" /> */}
         <Input size="medium" placeholder="search to add friends" />
       </div>
     </div>
