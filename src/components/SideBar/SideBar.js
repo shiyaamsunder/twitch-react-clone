@@ -1,8 +1,6 @@
 import React from "react";
 import "./SideBar.css";
 import Channels from "./Channels/Channels";
-import SimpleBar from "simplebar-react";
-import "simplebar/dist/simplebar.min.css";
 import Input from "../Input/Input";
 
 const SideBar = (props) => {

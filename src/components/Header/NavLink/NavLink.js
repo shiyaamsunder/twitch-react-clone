@@ -5,7 +5,7 @@ const NavLink = ({ name, type, link }) => {
   const HeaderNavLink = ({ name, link }) => {
     return (
       <h5 className="header__link">
-        <a className="link" href="#">
+        <a className="link" href="/home">
           {name}
         </a>
       </h5>
@@ -15,7 +15,7 @@ const NavLink = ({ name, type, link }) => {
     <HeaderNavLink name={name} />
   ) : (
     <li>
-      <a href="#">{name}</a>
+      <a href="/home">{name}</a>
     </li>
   );
 };
