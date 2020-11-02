@@ -23,7 +23,11 @@ const Header = (props) => {
           <div className="links links-right">
             <NavLink type="header" name="Esports" />
             <NavLink type="header" name="Music" />
-            <Tippy content={<span style={{ fontFamily: "Inter" }}>More</span>}>
+            <Tippy
+              content={
+                <span style={{ fontFamily: "Inter, sans-serif" }}>More</span>
+              }
+            >
               <div className="icon">
                 <i className="fas fa-ellipsis-h"></i>
               </div>
@@ -37,7 +41,11 @@ const Header = (props) => {
       <div className="header__right">
         <div className="right-links">
           <Tippy
-            content={<span style={{ fontFamily: "Inter" }}>Notifications</span>}
+            content={
+              <span style={{ fontFamily: "Inter, sans-serif" }}>
+                Notifications
+              </span>
+            }
           >
             <div className="icon">
               <i className="fas fa-inbox"></i>
@@ -45,7 +53,9 @@ const Header = (props) => {
           </Tippy>
 
           <Tippy
-            content={<span style={{ fontFamily: "Inter" }}>Whispers</span>}
+            content={
+              <span style={{ fontFamily: "Inter, sans-serif" }}>Whispers</span>
+            }
           >
             <div className="icon">
               <i className="far fa-comment-alt"></i>
